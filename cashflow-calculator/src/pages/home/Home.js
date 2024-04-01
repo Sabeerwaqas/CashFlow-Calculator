@@ -4,7 +4,7 @@ import { projectColors } from "../../assets/colors/index";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { atmBtn } from "./index";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 const Home = () => {
   const [themeState, setThemeState] = useState(false);
@@ -35,7 +35,7 @@ const Home = () => {
               }}
             >
               <Grid container justifyContent={"space-between"} height={"100px"}>
-              {/* Left side */}
+                {/* Left side */}
                 <Grid
                   item
                   xs={6}
@@ -82,7 +82,10 @@ const Home = () => {
                       themeState === false
                         ? "0 1px 10px 1px grey"
                         : "0 1px 10px 1px #ffffff",
-                    color: themeState === false ? projectColors.lightThemeBtnColor : projectColors.darkThemeBtnColor ,
+                    color:
+                      themeState === false
+                        ? projectColors.lightThemeBtnColor
+                        : projectColors.darkThemeBtnColor,
                     borderRadius: "10px",
                   }}
                 >
@@ -177,7 +180,7 @@ const Home = () => {
                       <Grid item xs={7}>
                         {atmBtn.map((data, index) => (
                           <Button
-                          key={uuidv4()}
+                            key={uuidv4()}
                             sx={{
                               color:
                                 themeState === false ? "#000000 " : "#ffffff",
@@ -219,7 +222,7 @@ const Home = () => {
                           Clear
                         </Button>
                         <Button
-                        size="small"
+                          size="small"
                           sx={{
                             width: "100%",
                             textAlign: "center",
