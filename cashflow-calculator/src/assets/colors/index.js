@@ -8,4 +8,5 @@ export const projectColors = {
   enterBtnBgColor: "#008000",
   lightThemeBtnColor: "#000000",
   darkThemeBtnColor: "#FFFFFF",
+  currencyColor:"#008140"
 };

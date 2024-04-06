@@ -1,5 +1,9 @@
 export const atmBtn = [
     {
+        num:"0",
+        superScript:""
+    },
+    {
         num:"1",
         superScript:""
     },
@@ -35,4 +39,5 @@ export const atmBtn = [
         num:"9",
         superScript:"wxyz"
     },
+  
 ]

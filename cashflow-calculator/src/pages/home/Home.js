@@ -8,6 +8,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const Home = () => {
   const [themeState, setThemeState] = useState(false);
+  const [amount, setAmount] = useState(null);
 
   const changeTheme = () => {
     setThemeState((prevState) => !prevState);
@@ -67,7 +68,14 @@ const Home = () => {
                           ? "#ffffff"
                           : projectColors.darkTheme,
                     }}
-                  ></Box>
+                  >
+                    <Box
+                      component={"h2"}
+                      sx={{ margin: "0", color: projectColors.currencyColor }}
+                    >
+                      Rs:{+amount}
+                    </Box>
+                  </Box>
                 </Grid>
                 {/* Right side */}
                 <Grid
@@ -180,6 +188,11 @@ const Home = () => {
                       <Grid item xs={7}>
                         {atmBtn.map((data, index) => (
                           <Button
+                            onClick={() =>
+                              setAmount((prevAmount) =>
+                                prevAmount ? prevAmount + data?.num : data?.num
+                              )
+                            }
                             key={uuidv4()}
                             sx={{
                               color:
@@ -197,6 +210,9 @@ const Home = () => {
                       </Grid>
                       <Grid item xs={5}>
                         <Button
+                          onClick={() =>
+                            setAmount(0)
+                          }
                           size="small"
                           sx={{
                             width: "100%",
@@ -209,6 +225,9 @@ const Home = () => {
                           Cancel
                         </Button>
                         <Button
+                          onClick={() =>
+                            setAmount((prevAmount) => prevAmount.slice(0, -1))
+                          }
                           size="small"
                           sx={{
                             width: "100%",
