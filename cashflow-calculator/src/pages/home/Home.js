@@ -5,6 +5,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { atmBtn } from "./index";
 import { v4 as uuidv4 } from "uuid";
+import projectImages from "../../assets";
 
 const Home = () => {
   const [themeState, setThemeState] = useState(false);
@@ -71,11 +72,235 @@ const Home = () => {
                   >
                     <Box
                       component={"h2"}
-                      sx={{ margin: "0", color: projectColors.currencyColor }}
+                      sx={{
+                        margin: "0",
+                        color: projectColors.currencyColor,
+                        textAlign: "center",
+                      }}
                     >
                       Rs:{+amount}
                     </Box>
                   </Box>
+                  <Grid item xs={12}>
+                    <Grid container justifyContent={"space-between"}>
+                      {/* 10 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.ten}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "190px",
+                            left: "290px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                      {/* 20 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.twenty}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "190px",
+                            left: "550px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                      {/* 50 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.fifty}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "270px",
+                            left: "290px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                      {/* 75 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.seventyFive}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "270px",
+                            left: "550px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                      {/* 100 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.hundred}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "360px",
+                            left: "290px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                      {/* 500 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.fiveHundreds}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "360px",
+                            left: "550px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                      {/* 1000 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.oneThousand}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "430px",
+                            left: "290px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                      {/* 5000 rupees */}
+                      <Grid item xs={6}>
+                        <Box
+                          component={"img"}
+                          sx={{
+                            mt: 1,
+                            width: "150px",
+                            boxShadow: themeState
+                              ? "0 0 10px 0 grey"
+                              : "0 0 10px 0 grey",
+                          }}
+                          src={projectImages.fiveThousands}
+                          alt="Ten rupees"
+                        />
+                        <Box
+                          component={"h2"}
+                          sx={{
+                            display: "block",
+                            position: "absolute",
+                            top: "430px",
+                            left: "550px",
+                            color: projectColors.currencyColor,
+                          }}
+                        >
+                          0
+                        </Box>
+                      </Grid>
+                    </Grid>
+                  </Grid>
                 </Grid>
                 {/* Right side */}
                 <Grid
@@ -210,9 +435,7 @@ const Home = () => {
                       </Grid>
                       <Grid item xs={5}>
                         <Button
-                          onClick={() =>
-                            setAmount(0)
-                          }
+                          onClick={() => setAmount(0)}
                           size="small"
                           sx={{
                             width: "100%",
