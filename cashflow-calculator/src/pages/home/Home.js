@@ -26,10 +26,7 @@ const Home = () => {
               sx={{
                 width: "100%",
                 height: "90vh",
-                backgroundColor:
-                  themeState === false
-                    ? projectColors.lightTheme
-                    : projectColors.darkTheme,
+                backgroundColor: themeState === false ? projectColors.lightTheme : projectColors.darkTheme,
                 boxShadow: "0 1px 10px 1px grey",
                 p: 2,
                 mt: 3.5,
@@ -42,14 +39,8 @@ const Home = () => {
                   item
                   xs={6}
                   sx={{
-                    backgroundColor:
-                      themeState === false
-                        ? projectColors.lightTheme
-                        : "#000000",
-                    boxShadow:
-                      themeState === false
-                        ? "0 1px 10px 1px grey"
-                        : "0 1px 10px 1px #ffffff",
+                    backgroundColor: themeState === false ? projectColors.lightTheme : "#000000",
+                    boxShadow: themeState === false ? "0 1px 10px 1px grey" : "0 1px 10px 1px #ffffff",
                     color: themeState === false ? "#000000" : "#ffffff",
                     borderRadius: "10px",
                     padding: "1%",
@@ -58,16 +49,10 @@ const Home = () => {
                   <Box
                     component={"section"}
                     sx={{
-                      border:
-                        themeState === false
-                          ? "2px solid #000000"
-                          : "2px solid #ffffff",
+                      border: themeState === false ? "2px solid #000000" : "2px solid #ffffff",
                       height: "20vh",
                       borderRadius: "10px",
-                      backgroundColor:
-                        themeState === false
-                          ? "#ffffff"
-                          : projectColors.darkTheme,
+                      backgroundColor: themeState === false ? "#ffffff" : projectColors.darkTheme,
                     }}
                   >
                     <Box
@@ -90,9 +75,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.ten}
                           alt="Ten rupees"
@@ -102,7 +85,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "190px",
+                            top: "250px",
                             left: "290px",
                             color: projectColors.currencyColor,
                           }}
@@ -117,9 +100,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.twenty}
                           alt="Ten rupees"
@@ -129,7 +110,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "190px",
+                            top: "250px",
                             left: "550px",
                             color: projectColors.currencyColor,
                           }}
@@ -144,9 +125,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.fifty}
                           alt="Ten rupees"
@@ -156,7 +135,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "270px",
+                            top: "340px",
                             left: "290px",
                             color: projectColors.currencyColor,
                           }}
@@ -171,9 +150,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.seventyFive}
                           alt="Ten rupees"
@@ -183,7 +160,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "270px",
+                            top: "340px",
                             left: "550px",
                             color: projectColors.currencyColor,
                           }}
@@ -198,9 +175,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.hundred}
                           alt="Ten rupees"
@@ -210,7 +185,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "360px",
+                            top: "430px",
                             left: "290px",
                             color: projectColors.currencyColor,
                           }}
@@ -225,9 +200,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.fiveHundreds}
                           alt="Ten rupees"
@@ -237,7 +210,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "360px",
+                            top: "430px",
                             left: "550px",
                             color: projectColors.currencyColor,
                           }}
@@ -252,9 +225,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.oneThousand}
                           alt="Ten rupees"
@@ -264,7 +235,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "430px",
+                            top: "500px",
                             left: "290px",
                             color: projectColors.currencyColor,
                           }}
@@ -279,9 +250,7 @@ const Home = () => {
                           sx={{
                             mt: 1,
                             width: "150px",
-                            boxShadow: themeState
-                              ? "0 0 10px 0 grey"
-                              : "0 0 10px 0 grey",
+                            boxShadow: themeState ? "0 0 10px 0 grey" : "0 0 10px 0 grey",
                           }}
                           src={projectImages.fiveThousands}
                           alt="Ten rupees"
@@ -291,7 +260,7 @@ const Home = () => {
                           sx={{
                             display: "block",
                             position: "absolute",
-                            top: "430px",
+                            top: "500px",
                             left: "550px",
                             color: projectColors.currencyColor,
                           }}
@@ -307,18 +276,9 @@ const Home = () => {
                   item
                   xs={4}
                   sx={{
-                    backgroundColor:
-                      themeState === false
-                        ? projectColors.lightTheme
-                        : "#000000",
-                    boxShadow:
-                      themeState === false
-                        ? "0 1px 10px 1px grey"
-                        : "0 1px 10px 1px #ffffff",
-                    color:
-                      themeState === false
-                        ? projectColors.lightThemeBtnColor
-                        : projectColors.darkThemeBtnColor,
+                    backgroundColor: themeState === false ? projectColors.lightTheme : "#000000",
+                    boxShadow: themeState === false ? "0 1px 10px 1px grey" : "0 1px 10px 1px #ffffff",
+                    color: themeState === false ? projectColors.lightThemeBtnColor : projectColors.darkThemeBtnColor,
                     borderRadius: "10px",
                   }}
                 >
@@ -328,19 +288,10 @@ const Home = () => {
                       onClick={() => changeTheme()}
                       size="small"
                       sx={{
-                        color:
-                          themeState === false
-                            ? projectColors.darkThemeTextColor
-                            : projectColors.lightThemeTextColor,
-                        backgroundColor:
-                          themeState === false
-                            ? projectColors.darkTheme
-                            : projectColors.lightTheme,
+                        color: themeState === false ? projectColors.darkThemeTextColor : projectColors.lightThemeTextColor,
+                        backgroundColor: themeState === false ? projectColors.darkTheme : projectColors.lightTheme,
                         "&:hover": {
-                          backgroundColor:
-                            themeState === false
-                              ? projectColors.darkTheme
-                              : projectColors.lightTheme,
+                          backgroundColor: themeState === false ? projectColors.darkTheme : projectColors.lightTheme,
                         },
                       }}
                     >
@@ -395,14 +346,8 @@ const Home = () => {
                     sx={{
                       width: "90%",
                       height: "auto",
-                      backgroundColor:
-                        themeState === false
-                          ? "#ffffff"
-                          : projectColors.darkTheme,
-                      boxShadow:
-                        themeState === false
-                          ? "0 0 5px 0 grey"
-                          : "0 0 5px 0 #ffffff",
+                      backgroundColor: themeState === false ? "#ffffff" : projectColors.darkTheme,
+                      boxShadow: themeState === false ? "0 0 5px 0 grey" : "0 0 5px 0 #ffffff",
                       color: themeState === false ? "#000000" : "#ffffff",
                       margin: "10px auto",
                       borderRadius: "10px",
@@ -413,15 +358,10 @@ const Home = () => {
                       <Grid item xs={7}>
                         {atmBtn.map((data, index) => (
                           <Button
-                            onClick={() =>
-                              setAmount((prevAmount) =>
-                                prevAmount ? prevAmount + data?.num : data?.num
-                              )
-                            }
+                            onClick={() => setAmount((prevAmount) => (prevAmount ? prevAmount + data?.num : data?.num))}
                             key={uuidv4()}
                             sx={{
-                              color:
-                                themeState === false ? "#000000 " : "#ffffff",
+                              color: themeState === false ? "#000000 " : "#ffffff",
                             }}
                           >
                             <Box component={"span"}>
@@ -448,9 +388,7 @@ const Home = () => {
                           Cancel
                         </Button>
                         <Button
-                          onClick={() =>
-                            setAmount((prevAmount) => prevAmount.slice(0, -1))
-                          }
+                          onClick={() => setAmount((prevAmount) => prevAmount.slice(0, -1))}
                           size="small"
                           sx={{
                             width: "100%",
