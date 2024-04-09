@@ -11,8 +11,28 @@ const Home = () => {
   const [themeState, setThemeState] = useState(false);
   const [amount, setAmount] = useState(null);
 
+  const [fiveHundreds, setFiveHundreds] = useState(0);
+  const [thousand, setThousand] = useState(0);
+
+  console.log("Amount=>", amount);
+
   const changeTheme = () => {
     setThemeState((prevState) => !prevState);
+  };
+
+  const handleAmount = (e) => {
+    // Calculate the number of 1000 rupee notes required
+    const numberOfThousandNotes = Math.floor(amount / 1000);
+
+    // Calculate the remaining amount after using 1000 rupee notes
+    let remainingAmount = amount % 1000;
+
+    // Calculate the number of 500 rupee notes required from the remaining amount
+    const numberOfFiveHundreds = Math.floor(remainingAmount / 500);
+
+    // Update the state with the calculated values
+    setThousand(numberOfThousandNotes);
+    setFiveHundreds(numberOfFiveHundreds);
   };
 
   return (
@@ -63,7 +83,7 @@ const Home = () => {
                         textAlign: "center",
                       }}
                     >
-                      Rs:{+amount}
+                      Rs:{amount}
                     </Box>
                   </Box>
                   <Grid item xs={12}>
@@ -215,7 +235,7 @@ const Home = () => {
                             color: projectColors.currencyColor,
                           }}
                         >
-                          0
+                          {fiveHundreds}
                         </Box>
                       </Grid>
                       {/* 1000 rupees */}
@@ -240,7 +260,7 @@ const Home = () => {
                             color: projectColors.currencyColor,
                           }}
                         >
-                          0
+                          {thousand}
                         </Box>
                       </Grid>
                       {/* 5000 rupees */}
@@ -265,7 +285,7 @@ const Home = () => {
                             color: projectColors.currencyColor,
                           }}
                         >
-                          0
+                          {/* {fiveHundreds} */}0{}
                         </Box>
                       </Grid>
                     </Grid>
@@ -402,6 +422,7 @@ const Home = () => {
                           Clear
                         </Button>
                         <Button
+                          onClick={(e) => handleAmount(e)}
                           size="small"
                           sx={{
                             width: "100%",
